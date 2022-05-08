@@ -6,7 +6,7 @@ My personal [website](https://www.marcin-tatarski.com) with a list of my project
 
 ## Installation
 ```
- git clone https://github.com/martindocs/launch-countdown-timer.git
+ git clone https://martindocs.github.io/marcin-tatarski.github.io.git/
 
  # cd into the project directory
 
