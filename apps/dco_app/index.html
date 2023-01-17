@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joerns HealthCare App</title>
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	<link rel="stylesheet" href="../../css/main.css">    
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>	
+	<div class="container">		
+        <header>
+			<a href="../../">
+				<div class="logo"></div>
+			</a>
+			<ul class="menu">
+				<li>
+					<a href="../../index.html">About</a>
+				</li>
+				<li>
+					<a href="../../projects.html">Projects</a>
+				</li>				
+			</ul>
+		</header>
+        <article class="project-container">      
+            <div class="article-center">
+                <div class="article-width">
+                    <h1>DCO Web App</h1>                        
+                    <div class="article-menu">
+                        <div class="article-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path d="M20 20h-4v-4h4v4zm-6-10h-4v4h4v-4zm6 0h-4v4h4v-4zm-12 6h-4v4h4v-4zm6 0h-4v4h4v-4zm-6-6h-4v4h4v-4zm16-8v22h-24v-22h3v1c0 1.103.897 2 2 2s2-.897 2-2v-1h10v1c0 1.103.897 2 2 2s2-.897 2-2v-1h3zm-2 6h-20v14h20v-14zm-2-7c0-.552-.447-1-1-1s-1 .448-1 1v2c0 .552.447 1 1 1s1-.448 1-1v-2zm-14 2c0 .552-.447 1-1 1s-1-.448-1-1v-2c0-.552.447-1 1-1s1 .448 1 1v2z"/></svg>
+                            <span>15-01-2023</span>
+                        </div>
+                        <div class="reading-time">
+                            <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 24 24"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"/></svg>
+                            <span>less than 1min to read</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <img class="img-zoom-in" src="./img/joerns_dco-main-screen-empty.png" alt="main screen">
+
+                        <h2>The Design</h2>
+                        <p>
+                            This is a web app which was created for keeping track of products' development changes. I used a <span class="tooltip" title="This is a collection of technologies that enables faster application development. MERN stand for (M)ongoDB (E)xpress (R)eact (N)ode. ">MERN</span> stack, with a bit of Vanilla Javascript.
+                        </p>                                                   
+                        <p>
+                            Most of the UI elements were created from scratch. The logo was designed in Inkscape, and for the icons I used <a href="https://react-icons.github.io/react-icons/">React Icons</a>. 
+                        </p>
+                        
+                        <h2>Login Screen and Main Page</h2>                       
+                        <p>
+                            The app is only accessible for people within the company. There are four different account types;
+                        </p>                                             
+                        <ul>
+                            <li>User - for people who are approving documents</li>
+                            <li>Editor - creators of the documents</li>
+                            <li>Guest - for anyone within the company who wants access, just to search the database</li>
+                            <li>Admin - can access all parts of the website</li>
+                        </ul>                       
+                        <img class="img-zoom-in" src="./img/joerns_dco-login-screen.png" alt="login screen">      
+                        <p>
+                            The "All Dco's" page is available for every account. The edit/delete features are only available/visible for the admin.
+                        </p>
+                        <p>
+                            The main features include:
+                        </p>
+                        <ul>
+                            <li>
+                                All users have access to the help page and can logout from the app <span class="circle">1</span>. The settings include a dark/light theme mode. Additionaly, the admin account has access to the dashboard page. 
+                            </li>
+                            <li>
+                                The Search form <span class="circle">3</span>, has an option to filter documents by their status (pending, approved, rejected), using alphabetical order (a-z or z-a) or by their date (newest / oldest). In the field box <span class="circle">2</span>, the user can search for documents by their Title.
+                            </li>
+                            <li>
+                                The Comments section is hidden by default, and can be accessed by clicking on the speech bubble <span class="circle">4</span>.
+                            </li>
+                            <li>
+                                The Changes section includes a link to a pdf form <span class="circle">5</span>. The pdf form will pop up on a new tab. 
+                            </li>
+                            <li>
+                                The Text <span class="circle">6</span> under the Title will change its status if all users have approved it or if the document is rejected.
+                            </li>
+                            <li>
+                                The Status bar <span class="circle">7</span> indicates who has already approved the document (green) and who rejected it (red). Hovering over any of the squares will show the name of the approver. Additionally, if any of the users reject the document, it won't be available for others in their Inbox, until the creator of the document updates it.
+                            </li>
+                        </ul>                        
+                        <img class="img-zoom-in" src="./img/joerns_dco-main-screen-admin.png" alt="admin main page">                  
+                        <p>
+                            Depending on the account type, some features won't be accessible/visible.  
+                        </p>
+                        <img class="img-zoom-in" src="./img/joerns_dco-main-screen-user_editor.png" alt="user / admin main page">
+                        
+                        <p>
+                            Search results are paginated <span class="circle">8</span>, with six results per page.  
+                        </p>
+                        <img class="img-zoom-in" src="./img/joerns_dco-main-screen-user_editor2.png" alt="pagination">
+
+                        <h2>Add Dco Page</h2>                       
+                        <p>
+                            This is only available for the admin and editor accounts.  
+                        </p>                     
+                        <p>
+                            The main features:                            
+                        </p>
+                        <ul>
+                            <li>
+                                A DCO number <span class="circle">1</span> will be generated each time an editor/admin creates a new document.
+                            </li>
+                            <li>
+                                The Part list section <span class="circle">2</span> has a button to add additional field boxes if needed. To remove an unwanted field, the user needs to hover over the left side of the field and press the minus symbol.
+                            </li>
+                            <li>
+                                When adding a file, the user will get a small preview <span class="circle">3</span>. Depending on the browser, the user may get some additional functionality (zoom in/out etc). Adding files is restricted to only one pdf.
+                            </li>
+                        </ul>
+                        <p>
+
+                        </p>
+                        <img class="img-zoom-in" src="./img/joerns_dco-add-dco.png" alt="add dco page">                                                
+                        
+                        <h2>Edit Dco Page</h2>                       
+                        <p>
+                            Edit functionality is only available for the editors of the documents and it's accessible through the Inbox page. 
+                        </p>                                 
+                        <img class="img-zoom-in" src="./img/joerns_dco-edit-dco.png" alt="edit dco page">                          
+
+                        <h2>Inbox Page</h2>                       
+                        <p>
+                            This is mostly for the users and editors. Depending on the account type, some features will have different appearances.
+                        </p>              
+                        <p>
+                            The main features:
+                        </p>             
+                        <ul>
+                            <li>
+                                When a document is submitted <span class="circle">1</span>, it will disappear from that user's Inbox. The editors of that document will still have access to it, until all users have approved it.
+                            </li>                          
+                            <li>
+                                The approvers can add comments <span class="circle">2</span> to the document before submitting it. The comments are optional when approving it and are only required if the users reject it.
+                            </li>
+                            <li>
+                                If the document is rejected, it won't be available/visible to others users. The editor needs to update it first. After updating the document, the status bar will be reset to default (grey squres) <span class="circle">3</span>. The only part which is not reset is the comments section <span class="circle">4</span>. 
+                            </li>
+                        </ul>                        
+                        <img class="img-zoom-in" src="./img/joerns_dco-inbox-screen-user.png" alt="user inbox page">                        
+                        <p>
+                            The Inbox page for the editors of the documents looks very simillar to the Inbox page for approvers. The only changes are the edit/delete buttons <span class="circle">1</span>.
+                        </p>
+                        <img class="img-zoom-in" src="./img/joerns_dco-inbox-screen-editor.png" alt="editor inbox page"> 
+
+                        <h2>Favourites Page</h2>                       
+                        <p>
+                            Includes the favourite documents of each user. 
+                        </p>
+                        
+                        <h2>Mobile/Tablets</h2>                       
+                        <p>
+                            It has a few basic features. 
+                        </p>                     
+                        <ul>
+                            <li>
+                                Hamburger menu <span class="circle">1</span>, with a modal version of the side menu <span class="circle">2</span>.
+                            </li>
+                            <li>
+                                Depending on the screen size and the display results <span class="circle">3</span>, the amount of columns can vary. There are three columns on desktop, two columns on tablets and one column on mobile.
+                            </li>
+                        </ul>
+                        <img class="img-zoom-in" src="./img/joerns_dco-mobile.png" alt="mabile version">                        
+                        
+                        <h2>Wish list for upcoming releases</h2>                     
+                        <p>Major:</p>
+                        <ul>
+                            <li>
+                                Adding an email feature to the Add Dco page. It will be tied to the Submit button. When a new document is created, it will automatically send an email to all users.
+                            </li>
+                            <li>
+                                Edit/Delete any comments, this feature will only be available for the Admin.
+                            </li>
+                            <li>
+                                Replace the current login screen with a Microsoft Outlook login.
+                            </li>
+                            <li>
+                                Extended functionality for the Admin's Dashboard page.
+                            </li>
+                            <li>
+                                Automatic notification/reminder feature for users who are late with approving documents.
+                            </li>
+                            <li>
+                                Modify current search filters with an additional Calendar feature. The user will be able to search for DCOs created on a specific date or for DCOs created between two dates.
+                            </li>
+                            <li>
+                                Let the user switch the search results between tile view (current) to a more detailed view.
+                            </li>
+                        </ul>
+                        
+                        <p>Minor:</p>
+                        <ul>
+                            <li>
+                                Adding the Settings page notification toggle (on/off).
+                            </li>
+                            <li>
+                                Visual improvements and better integration with mobile phones/tablets.
+                            </li>
+                            <li>
+                                Let the users change the pagination search result to 5, 10 or 25 results per page.
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>      
+        </article>
+       
+		<footer class="contact">
+            <a href="mailto:martin.tatarski@gmail.com">
+                <div class="email-me-icon"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/marcin-tatarski/">
+                <div class="linkedIn-icon"></div>
+            </a>
+			<a href="https://github.com/martindocs">
+                <div class="github-icon"></div>
+            </a>
+		</footer>
+
+        <!-- <div class="modal"></div> -->
+
+        <!-- <div class="modal">
+            <div class="modal"></div>
+        </div> -->
+
+	</div>
+    <div class="modal"></div>
+    
+	<script src="../../js/main.js"></script>
+</body>
+</html>
