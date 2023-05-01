@@ -42,11 +42,14 @@ ul{
 ul li {
     line-height: 1.5;
 }
+p {
+    line-height: 1.7;
+}
 .circle {    
     border-radius: 50%;
     padding: .5px 5px;
     background: rgb(255, 0, 0, 0.2);
-    border: 2px solid #000;
+    border: 1px solid #000;
     text-align: center; 
     font-weight: 600;
 }
