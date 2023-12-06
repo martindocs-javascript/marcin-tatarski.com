@@ -6,7 +6,7 @@ My personal [website](https://marcin-tatarski.com) with a list of my projects.
 
 ## Installation
 ```
- git clone https://martindocs.github.io/marcin-tatarski.github.io.git/
+ git clone https://github.com/martindocs-javascript/marcin-tatarski.com.git
 
  # cd into the project directory
 
