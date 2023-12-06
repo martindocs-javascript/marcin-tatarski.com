@@ -2,7 +2,7 @@
 
 My personal [website](https://marcin-tatarski.com) with a list of my projects.
 
-![Main Page](./img/marcin-tatarski-portfolio.png)
+![Main Page](./assets/img/marcin-tatarski-portfolio.png)
 
 ## Installation
 ```
