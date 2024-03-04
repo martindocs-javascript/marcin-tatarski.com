@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Titillium+Web:wght@300;400;600;700;900&display=swap');
 
 /* INIT SETUP */
 *{
@@ -7,8 +7,8 @@
     padding: 0;
 }
 body{    
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
@@ -18,6 +18,8 @@ a{
 
 /* GENERAL */
 .container{
+    display: flex;
+    flex-direction: column;
     position: relative;
     align-self: stretch;
     height: 100vh;
@@ -47,7 +49,7 @@ p {
 }
 .circle {    
     border-radius: 50%;
-    padding: .5px 5px;
+    padding: .5px 9px;
     background: rgb(255, 0, 0, 0.2);
     border: 1px solid #000;
     text-align: center; 
@@ -70,7 +72,6 @@ ul.menu{
 }
 .menu li{
     display: inline-block;
-    font-size: 12px;
     margin: 0 .5rem;
     text-transform: uppercase;
 }
@@ -93,7 +94,7 @@ ul.menu{
 
 /* ABOUT ME SUMMARY */
 .about-container{
-    padding: 1.563rem 2.5rem;
+    padding: 3.563rem 2.5rem;
 }
 .about-top{
     display: flex;
@@ -112,11 +113,7 @@ ul.menu{
     flex-direction: column;    
 }
 .summary h1{
-    font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 900;
-    /* margin-top: .938rem; */
-    margin-bottom: .5rem;
+    font-size: 28px;
 }
 .summary-content{
     display: flex;
@@ -153,20 +150,23 @@ ul.menu{
 }
 .skills{
     display: flex;
-    margin: .8rem 0;
     flex-wrap: wrap;
+    list-style: none;
+    margin-top: auto;
+    padding-left: 0;
 }
-.skills > div{
+.skills > li{
     background-color: rgba(229,231,235,.8);
     margin-right: .5rem;
     margin-bottom: .5rem;
     padding: 0.156rem 0.5rem;
-    font-size: 12px;
+    font-size: 16px;
     border-radius: 4px;
 }
 .contact{
     display: flex;  
     align-items: center;  
+   
 }
 .contact a > div{
     margin-right: 1rem;
@@ -203,7 +203,7 @@ ul.menu{
 
 /* PROJECT */
 .project-container{
-    padding: 1.563rem 2.5rem;
+    padding: 3.563rem 2.5rem;
 }
 .project-header{
     display: flex;
@@ -211,8 +211,6 @@ ul.menu{
 }
 .project-header h1{
     font-size: 26px;
-    text-transform: uppercase;
-    font-weight: 900;
 }
 .projects-no{
     align-self: flex-start;
@@ -274,28 +272,13 @@ ul.menu{
     font-weight: 400;
     margin-bottom: .5rem;
 }
-.project-date{
-    display: flex;
-    align-items: center;    
-    margin-bottom: .625rem;
-    font-size: 13px;
-    color: rgba(107,114,128);
-}
-.calendar{
-    background-image: url('../svg/calendar.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: .7rem;
-    width: .7rem;
-    margin-right: .5rem;
-    filter: brightness(0) saturate(100%) invert(45%) sepia(21%) saturate(249%) hue-rotate(182deg) brightness(94%) contrast(90%);
-}
 .project-desc{
     font-weight: 300;
     margin-bottom: .938rem;
 }
 .showcase{    
-    display: flex;      
+    display: flex;    
+    flex-wrap: wrap;  
     gap: .5rem;
     padding: 0 1.25rem 1.25rem;  
 }
@@ -308,7 +291,7 @@ ul.menu{
 .showcase div{
     display: flex;
     align-items: center;
-    padding: .5rem .938rem;
+    padding: .25rem .938rem;
     border: 1px solid #d1d5db;
     border-radius: 4px;
 }
@@ -386,11 +369,16 @@ img.img-zoom-out{
   
 
 /* FOOTER */
-footer{
+footer{  
     display: flex;
-    justify-content: center;
-    margin-top: 3.125rem;
-    margin-bottom: 3.125rem;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.reserved {
+    margin-top: 1.5rem;
 }
 
 /* MEDIA QUERIES  */
