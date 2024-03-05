@@ -303,8 +303,8 @@ ul.menu{
 footer .github-icon, footer .linkedIn-icon, footer .email-me-icon{
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1.2rem;
-    width: 1.2rem;
+    height: 1.3rem;
+    width: 1.3rem;
 }
 .showcase svg{
     margin-right: .188rem;
@@ -328,7 +328,7 @@ footer .github-icon, footer .linkedIn-icon, footer .email-me-icon{
 .article-menu span{
     margin-left: .313rem;
 }
-.article-date, .reading-time{
+.reading-time{
   display: flex;
   align-items: center;
   margin-right: 1.25rem;
