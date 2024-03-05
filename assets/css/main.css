@@ -157,7 +157,7 @@ ul.menu{
 }
 .skills > li{
     background-color: rgba(229,231,235,.8);
-    margin-right: .75rem;
+    margin-right: .5rem;
     margin-bottom: .5rem;
     padding: 0.156rem 0.5rem;
     font-size: 16px;
@@ -269,7 +269,7 @@ ul.menu{
 }
 .project-title h2{
     font-size: 1.25rem;        
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom: .5rem;
 }
 .project-desc{
